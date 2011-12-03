@@ -1,0 +1,20 @@
+{
+    "name":         "ofs-sqlite",
+    "description":  "ObjectFS storage wrapper for Sqlite.",
+    "version":      "1.0",
+    "main":         "index.js",
+    "dependencies": {
+        "ctlr-sqlite": "1.0"
+    },
+    "repositories": [{
+            "type":"git",
+            "url":"git://github.com/emilis/ofs-sqlite.git"
+        }],
+    "objectfs-uris": [
+        { "scheme":"sqlite", "module":"ofs-sqlite" },
+        { "path": "*.sqlite", "module":"ofs-sqlite" }],
+    "maintainers":   [
+        { "name": "Emilis Dambauskas", "email": "emilis.d@gmail.com", "web": "http://emilis.github.com/" }],
+    "licenses":     [
+        { "type": "GPLv3", "url": "http://www.gnu.org/licenses/gpl.txt" }]
+}
